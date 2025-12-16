@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,53 +9,43 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 </head>
+
 <body class="bg-dark text-white">
 
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Sistema de Gestión de Notas</h1>
-
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card shadow">
-                    <div class="card-header bg-secondary text-white">
-                        <h4 class="mb-0">Resumen del Curso</h4>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">A continuación se detalla el estado actual de los estudiantes basado en sus calificaciones.</p>
-                        
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Total Aprobados (7-10)
-                                <span class="badge bg-success rounded-pill" id="totalAprobados">0</span>
-                            </li>
-                            
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Total Supletorio (5-6)
-                                <span class="badge bg-warning text-dark rounded-pill" id="totalSupletorios">0</span>
-                            </li>
-                            
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Total Reprobados (0-4)
-                                <span class="badge bg-danger rounded-pill" id="totalReprobados">0</span>
-                            </li>
-                            
-                            <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
-                                Promedio General
-                                <span id="promedioCurso">0.00</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card-footer text-center">
-                        <h5>Estado del Curso: <span id="estadoCurso" class="fw-bold">---</span></h5>
-                    </div>
+        <div class="card shadow col-md-6 mx-auto">
+            <div class="card-header bg-secondary text-white">
+                <h1>Resultados del Curso</h1>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">
+                        Aprobados:
+                        <span id="txt_aprobados" class="badge bg-success">0</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        Supletorios:
+                        <span id="txt_supletorios" class="badge bg-warning text-dark">0</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        Reprobados:
+                        <span id="txt_reprobados" class="badge bg-danger">0</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between fw-bold">
+                        Promedio:
+                        <span id="txt_promedio">0.00</span>
+                    </li>
+                </ul>
+                <div class="mt-3 text-center">
+                    <h5>Estado: <span id="txt_estado">---</span></h5>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
     <script src="./public/js/calculoNotas.js"></script>
 
 </body>
+
 </html>
