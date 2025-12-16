@@ -11,3 +11,5 @@ Luego modificaremos el archivo "package.json" en la seccion de scripts añadirem
 
 para poder correr el servidor vite con:
 npm run start
+
+y luego escribir en consola la letra "o" que abre en si el servidor
